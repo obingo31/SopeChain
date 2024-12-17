@@ -22,7 +22,7 @@ const LiquidityPools: React.FC = () => {
         })),
       );
     };
-    fetchPools();
+    fetchPools().then(() => {});
   }, []);
 
   return (

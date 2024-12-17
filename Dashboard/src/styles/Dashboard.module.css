@@ -1,0 +1,82 @@
+.dashboardContainer {
+  padding: 2rem;
+  background: linear-gradient(to right, #1e1e2f, #2a2a3d);
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00d4ff;
+}
+
+.metricsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.metricCard {
+  background: #2a2a3d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.metricCard:hover {
+  transform: scale(1.05);
+}
+
+.metricCard h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #00ffcc;
+}
+
+.metricCard p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.chartContainer {
+  margin: 2rem auto;
+  width: 80%;
+  background: #2a2a3d;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tokenTable {
+  margin: 2rem auto;
+  width: 90%;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #2a2a3d;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+th,
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  background: #00d4ff;
+  color: #1e1e2f;
+}
+
+tr:hover {
+  background: rgba(0, 255, 204, 0.1);
+}
