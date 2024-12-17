@@ -1,0 +1,88 @@
+/* Dashboard.module.css */
+
+/* Wrapper for the dashboard */
+.dashboardContainer {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #f8fafc;
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Headers */
+.cardHeader {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardHeader span {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+/* Input and Button Container */
+.inputContainer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.networkDropdown {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.networkDropdown:focus {
+  border-color: #2563eb;
+}
+
+/* Error Message Styling */
+.errorMessage {
+  background-color: #fee2e2;
+  border: 1px solid #dc2626;
+  color: #b91c1c;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Transaction History Chart */
+.chartContainer {
+  width: 100%;
+  height: 400px;
+  margin-top: 16px;
+}
+
+.chartTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Responsive Grid for Cards */
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
